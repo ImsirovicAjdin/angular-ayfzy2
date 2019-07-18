@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  templateUrl: './app.component.html',
-  styleUrls: [ './app.component.css' ]
+  template: `
+    <div>Hide-show with ngSwitch</div>
+  `
 })
 export class AppComponent  {
-  name = 'Angular';
+
 }
