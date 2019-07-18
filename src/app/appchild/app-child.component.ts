@@ -8,6 +8,9 @@ import { Component, Input, OnInit } from '@angular/core';
       <div [ngSwitch]="car?.make">
         MAKE: {{car?.make}}
         <span *ngSwitchCase="'Subaru'"> {{ this.string1 }}</span>
+                <span *ngSwitchCase="'Toyota'">  {{ this.string2 }}</span>
+                <span *ngSwitchCase="'VW'">  {{ this.string3 }}</span>
+                <span *ngSwitchDefault>  {{ this.string4 }}</span>         
       </div>
       <div>ID: {{car?.id}}</div>
       <div [hidden]="!car?.old">
@@ -21,4 +24,7 @@ export class AppChildComponent {
   @Input() car;
 
   string1 = "(No. 1 Choice)";
+    string2 = "(Japanese)";
+    string3 = "(German)";
+    string4 = "(default case)";
 }
