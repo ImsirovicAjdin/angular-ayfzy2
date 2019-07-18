@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'my-app',
   template: `
-    <div>Hide-show with ngSwitch</div>
+    <div>Parent component; Hide-show with ngSwitch</div>
     <app-child *ngFor="let vehicle of vehicles" [car]="vehicle"></app-child>
   `
 })
