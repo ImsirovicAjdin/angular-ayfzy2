@@ -20,11 +20,19 @@ import { Component, Input, OnInit } from '@angular/core';
     </div>
   `
 })
-export class AppChildComponent {
+export class AppChildComponent implements OnInit {
   @Input() car;
 
   string1 = "(No. 1 Choice)";
     string2 = "(Japanese)";
     string3 = "(German)";
     string4 = "(default case)";
+
+    logCars(){
+        console.log(this.car);
+    }
+
+    ngOnInit() {
+        this.logCars();
+    }    
 }
